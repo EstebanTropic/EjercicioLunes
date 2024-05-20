@@ -14,9 +14,9 @@ jobs:
   build:
     name: build and push Docker image
     runs-on: ubuntu-latest
-    workflow_run:
-      workflows:
-        - lint
+      workflow_run:
+        workflows:
+          - lint
     steps:
       - uses: actions/checkout@v2
           
