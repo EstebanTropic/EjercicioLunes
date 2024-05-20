@@ -28,6 +28,6 @@ jobs:
         with:
           context: .
           push: true 
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/Lunes:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/lunes:latest
 
  
