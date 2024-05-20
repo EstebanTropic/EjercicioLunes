@@ -19,5 +19,5 @@ jobs:
         script: |
             sleep 60
             docker stop web && docker rm web
-            docker rmi tropic71/galeria
+            docker rmi ${{ secrets.DOCKERHUB_USERNAME }}/lunes
             docker run -d -p 80:5000 --name web tropic71/galeria:latest
